@@ -1,0 +1,43 @@
+name: Add Command
+description: Suggest a new terminal command
+labels: ["enhancement", "good first issue"]
+body:
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      description: What command should be added?
+      placeholder: "e.g., htop, docker cp, kubectl describe"
+    validations:
+      required: true
+  - type: textarea
+    id: real-behavior
+    attributes:
+      label: Real behavior
+      description: What does this command do in real Linux? Paste example output.
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: Module
+      description: Which command module should it go in?
+      options:
+        - src/commands/fs.js (filesystem)
+        - src/commands/system.js (system info)
+        - src/commands/docker.js (Docker)
+        - src/commands/k8s.js (Kubernetes)
+        - src/commands/git.js (Git)
+        - src/commands/sql.js (SQL/databases)
+        - src/commands/network.js (networking)
+        - src/commands/dangerous.js (dangerous commands)
+        - src/commands/fun.js (fun/easter eggs)
+        - src/commands/packages.js (package managers)
+        - New module needed
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Any notes on state changes, cascades, or edge cases?

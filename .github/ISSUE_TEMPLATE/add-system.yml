@@ -1,0 +1,31 @@
+name: Add System
+description: Propose a new stateful subsystem
+labels: ["enhancement", "system"]
+body:
+  - type: input
+    id: system
+    attributes:
+      label: System name
+      description: What system should be added?
+      placeholder: "e.g., DNS, SSL certificates, iptables state"
+    validations:
+      required: true
+  - type: textarea
+    id: state
+    attributes:
+      label: State structure
+      description: What state does this system need?
+    validations:
+      required: true
+  - type: textarea
+    id: commands
+    attributes:
+      label: Commands
+      description: What commands does this system add?
+    validations:
+      required: true
+  - type: textarea
+    id: cascades
+    attributes:
+      label: Cascades
+      description: How should this system interact with other systems?

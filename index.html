@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self' https://pshell.dev" />
+  <title>PShell | by Hlib Zakrevskyi</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="description" content="A terminal reaction game by Hlib Zakrevskyi. Spot dangerous bash commands and press Ctrl+C before it's too late!" />
+  <meta property="og:title" content="PShell | by Hlib Zakrevskyi" />
+  <meta property="og:description" content="Can you spot the dangerous bash commands before they destroy production? A terminal reaction game. github.com/hlib-zakr/pshell" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:url" content="https://pshell.dev" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@hlib-zakr" />
+  <meta name="twitter:title" content="PShell | by Hlib Zakrevskyi" />
+  <meta name="twitter:description" content="Spot dangerous bash commands. Press Ctrl+C. Save prod. github.com/hlib-zakr/pshell" />
+  <meta name="twitter:image" content="/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="matrix-rain"></canvas>
+  <div id="app">
+    <div id="terminal">
+      <div id="terminal-header">
+        <div class="header-left">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <span class="title">user@pshell:~$</span>
+        <a href="https://github.com/hlib-zakr/pshell" target="_blank" class="header-brand">PShell</a>
+        <div id="hud" class="hud hidden">
+          <span id="hud-level">LVL 1</span>
+          <span class="hud-sep">|</span>
+          <span id="hud-score">0 pts</span>
+          <span class="hud-sep">|</span>
+          <span id="hud-reaction">-- ms</span>
+        </div>
+        <div class="header-right">
+          <button id="hard-toggle" class="header-btn" title="Hard mode: no danger hints">HARD</button>
+          <button id="mute-toggle" class="header-btn" title="Toggle sound">&#9834;</button>
+        </div>
+      </div>
+      <div id="terminal-body">
+        <div id="lines-container"></div>
+      </div>
+    </div>
+  </div>
+  <a href="https://github.com/hlib-zakr/pshell" target="_blank" id="watermark">PShell · by Hlib Zakrevskyi</a>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

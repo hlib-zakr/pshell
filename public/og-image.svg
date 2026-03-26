@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+
+  <!-- Terminal window -->
+  <rect x="60" y="40" width="1080" height="470" rx="10" fill="#1a1a2e" stroke="#00ff41" stroke-width="2"/>
+
+  <!-- Title bar -->
+  <rect x="60" y="40" width="1080" height="36" rx="10" fill="#2a2a3e"/>
+  <rect x="60" y="66" width="1080" height="10" fill="#2a2a3e"/>
+  <circle cx="84" cy="58" r="7" fill="#ff5f56"/>
+  <circle cx="106" cy="58" r="7" fill="#ffbd2e"/>
+  <circle cx="128" cy="58" r="7" fill="#27c93f"/>
+  <text x="152" y="63" font-family="Courier New, monospace" font-size="14" fill="#666">user@stopthecode:~$</text>
+
+  <!-- STOP -->
+  <text x="110" y="170" font-family="Courier New, monospace" font-size="100" font-weight="bold" fill="#00ff41">STOP</text>
+
+  <!-- THE CODE -->
+  <text x="110" y="270" font-family="Courier New, monospace" font-size="100" font-weight="bold" fill="#00ff41">THE CODE</text>
+
+  <!-- Dangerous command line -->
+  <text x="110" y="340" font-family="Courier New, monospace" font-size="22" fill="#666">$</text>
+  <text x="135" y="340" font-family="Courier New, monospace" font-size="22" fill="#ff3333">rm -rf / --no-preserve-root</text>
+  <text x="635" y="340" font-family="Courier New, monospace" font-size="24" font-weight="bold" fill="#00ff41">^C</text>
+
+  <!-- Tagline -->
+  <text x="110" y="400" font-family="Courier New, monospace" font-size="20" fill="#888">Spot dangerous commands. Press Ctrl+C. Save prod.</text>
+
+  <!-- Branding -->
+  <text x="110" y="470" font-family="Courier New, monospace" font-size="17" fill="#00ff41">by Hlib Zakrevskyi</text>
+  <text x="390" y="470" font-family="Courier New, monospace" font-size="17" fill="#444">|</text>
+  <text x="420" y="470" font-family="Courier New, monospace" font-size="17" fill="#00ff41">github.com/hlib-zakr/stop-the-code</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="520" width="1200" height="110" fill="#0a0a0a"/>
+  <text x="600" y="580" font-family="Courier New, monospace" font-size="16" fill="#333" text-anchor="middle">A terminal reaction game — can you save production?</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0a0a0a" stroke="#00ff41" stroke-width="2"/>
+  <rect x="4" y="4" width="56" height="12" rx="4" fill="#1a1a1a"/>
+  <circle cx="12" cy="10" r="3" fill="#ff5f57"/>
+  <circle cx="22" cy="10" r="3" fill="#ffbd2e"/>
+  <circle cx="32" cy="10" r="3" fill="#28c840"/>
+  <text x="10" y="32" font-family="monospace" font-size="10" fill="#4fc3f7">$</text>
+  <text x="20" y="32" font-family="monospace" font-size="9" font-weight="bold" fill="#ff3333">rm -rf /</text>
+  <text x="10" y="45" font-family="monospace" font-size="10" fill="#ff3333">^C</text>
+  <rect x="10" y="50" width="2" height="3" fill="#00ff41">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

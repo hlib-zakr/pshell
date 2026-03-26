@@ -1,0 +1,31 @@
+name: Bug Report
+description: Output doesn't match real Linux
+labels: ["bug"]
+body:
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      description: What did you type?
+      placeholder: "e.g., docker ps -a"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected output
+      description: What does a real Linux terminal show?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual output
+      description: What does PShell show?
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Optional screenshot
