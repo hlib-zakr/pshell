@@ -8,9 +8,11 @@ Browser-based infrastructure simulator. 250+ real commands, stateful Docker/K8s/
 
 A terminal that behaves like a real Linux server — entirely in your browser.
 
-Stop a Docker container and watch your SQL break. Kill init and get a kernel panic. Deploy with Helm, query with psql, grep through logs. Everything is connected. Everything cascades.
+Stop a Docker container and watch your SQL break. Kill init and get a kernel panic. Deploy with Helm, query with psql, grep through logs. **Everything is connected. Everything cascades.**
 
-No VM. No container. No backend. A pure JavaScript state machine that simulates how infrastructure actually behaves — instantly, at zero cost.
+This isn't a VM. VMs give you one isolated machine — no Docker-inside-Docker, no multi-service infrastructure, no cascading failures between systems. PShell simulates **8 interconnected systems** where stopping postgres kills your SQL connections, takes down dependent services, and removes linked processes — all in microseconds, because it's a state machine, not a real OS.
+
+No boot time. No setup. No cost. Open the page and start breaking things.
 
 ## The Vision
 
@@ -98,15 +100,15 @@ See **[ARCHITECTURE.md](ARCHITECTURE.md)** for the deep dive.
 
 | | PShell | WebVM/v86 | SadServers | Killercoda |
 |---|---|---|---|---|
-| Client-side | Yes | Yes (WASM) | No (AWS VMs) | No (VMs) |
-| Commands | 250+ | Real OS | Real OS | Real OS |
-| Stateful systems | 8 interconnected | 1 VM | 1 VM/scenario | Real infra |
-| Cascading failures | Yes | No | No | No |
-| Instant load | Yes | Slow boot | VM spin-up | VM spin-up |
-| Zero cost per user | Yes | Yes | No | No |
-| Open source engine | Yes | Proprietary engine | Yes | No |
+| Loads in | **< 1 second** | 10-30 seconds | 1-5 minutes | 1-2 minutes |
+| Cost per user | **$0** | $0 | AWS VM cost | VM cost |
+| Cross-system cascades | **Yes** — stop postgres, SQL breaks, services go down | No | No | No |
+| Interconnected systems | **8 systems that talk to each other** | Isolated VM | 1 scenario at a time | Isolated labs |
+| Works offline | **Yes** | Yes | No | No |
+| Docker + K8s + SQL + Git | **All simulated, all connected** | Install it yourself | Pre-configured per scenario | Pre-configured |
+| Community extensible | **Add a command in 5 min** | Not designed for it | Server-side scenarios | Closed platform |
 
-No tool combines client-side + deep stateful simulation + cross-system cascades + instant load + zero cost. PShell is the first.
+Others give you a blank VM or a pre-built scenario. PShell gives you an interconnected infrastructure where everything affects everything else — instantly, for free, forever.
 
 ## Contributing
 
