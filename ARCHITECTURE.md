@@ -15,7 +15,7 @@
 
 > **Built in 24 hours.** A browser-based terminal OS with a reaction game, 237+ CLI commands, 8 stateful subsystems, and zero backend cost per user.
 >
-> **Live:** [pshell.vercel.app](https://pshell.vercel.app) | **By:** [PShell](https://x.com/hlib-zakr)
+> **Live:** [pshell.vercel.app](https://pshell.vercel.app) | **By:** [PShell](https://x.com/hlibzakrevskyi)
 
 ---
 
