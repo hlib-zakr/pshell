@@ -7,14 +7,14 @@ if (/Android|iPhone|iPad|iPod|webOS|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     <div id="mobile-block">
       <div class="mobile-logo">&gt;_</div>
       <h1>PShell</h1>
-      <p class="mobile-subtitle">by <a href="https://x.com/hlib-zakr" target="_blank">Hlib Zakrevskyi</a></p>
+      <p class="mobile-subtitle">by <a href="https://x.com/hlibzakrevskyi" target="_blank">Hlib Zakrevskyi</a></p>
       <div class="mobile-divider"></div>
       <p class="mobile-error">This game requires a physical keyboard.</p>
       <p class="mobile-desc">You need to press <strong>Ctrl+C</strong> to stop<br>dangerous commands before they execute.</p>
       <div class="mobile-divider"></div>
       <p class="mobile-cta">Visit on a desktop computer:</p>
       <a href="https://github.com/hlib-zakr/pshell" class="mobile-url">github.com/hlib-zakr/pshell</a>
-      <p class="mobile-follow">Follow: <a href="https://x.com/hlib-zakr" target="_blank">@hlib-zakr</a></p>
+      <p class="mobile-follow">Follow: <a href="https://x.com/hlibzakrevskyi" target="_blank">@hlibzakrevskyi</a></p>
     </div>
   `;
   throw new Error('Mobile blocked'); // Stop all further JS execution

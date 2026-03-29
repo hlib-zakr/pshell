@@ -470,7 +470,7 @@ export class TerminalManager {
 
     const socialLine = document.createElement('div');
     socialLine.className = 'line about-social';
-    socialLine.innerHTML = `<span class="about-x-art">\u2572 \u2571\n X\n\u2571 \u2572</span><a href="https://x.com/hlib-zakr" target="_blank" class="about-x-link">@hlib-zakr</a>`;
+    socialLine.innerHTML = `<span class="about-x-art">\u2572 \u2571\n X\n\u2571 \u2572</span><a href="https://x.com/hlibzakrevskyi" target="_blank" class="about-x-link">@hlibzakrevskyi</a>`;
     term.linesContainer.appendChild(socialLine);
     term._scrollToBottom();
 
