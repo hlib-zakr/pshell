@@ -374,7 +374,7 @@ export class Screens {
     const shareDiv = document.createElement('div');
     shareDiv.className = 'line share-row';
     const shareBtn = document.createElement('a');
-    const tweetText = `I scored ${score} pts (Level ${level}) on Stop The Code by @hlib-zakr!\n\nCan you spot the dangerous commands faster?\n\nPlay now: github.com/hlib-zakr/pshell`;
+    const tweetText = `I scored ${score} pts (Level ${level}) on Stop The Code by @hlibzakrevskyi!\n\nCan you spot the dangerous commands faster?\n\nPlay now: github.com/hlib-zakr/pshell`;
     shareBtn.href = `https://x.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
     shareBtn.target = '_blank';
     shareBtn.className = 'share-btn';
@@ -422,7 +422,7 @@ export class Screens {
   _addBrandLink(term) {
     const line = document.createElement('div');
     line.className = 'line brand-link';
-    line.innerHTML = `<a href="https://x.com/hlib-zakr" target="_blank" class="promptup-link">by Hlib Zakrevskyi</a>`;
+    line.innerHTML = `<a href="https://x.com/hlibzakrevskyi" target="_blank" class="promptup-link">by Hlib Zakrevskyi</a>`;
     term.linesContainer.appendChild(line);
     term._scrollToBottom();
   }
